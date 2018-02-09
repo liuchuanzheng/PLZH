@@ -36,13 +36,19 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/et_count"
         android:text="开始" />
-    <EditText
-        android:id="@+id/et_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="结果"
-        android:textSize="10sp"
+    <ScrollView
+        android:scrollbars="vertical"
         android:layout_below="@+id/button"
-        android:layout_marginTop="10dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="结果"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp" />
+    </ScrollView>
+
 
 </RelativeLayout>
